@@ -96,7 +96,7 @@ public class ReadLeaderboard {
         System.out.println("Day " + day + " Part " + part1);
 
         for (Map.Entry<Long, String> timingsEntry : userTimings.entrySet()) {
-            Date time  = new Date(timingsEntry.getKey() * 1000);
+            Date time = new Date(timingsEntry.getKey() * 1000);
 
             System.out.println(timingsEntry.getValue() + " - " + time.toInstant().atZone(ZoneId.of("America/New_York")).format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
         }

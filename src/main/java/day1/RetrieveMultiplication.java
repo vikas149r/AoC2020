@@ -1,4 +1,4 @@
-package aoc.day1;
+package day1;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -53,7 +53,7 @@ public class RetrieveMultiplication {
             Iterator<Integer> secondaryIterator = numbers.iterator();
 
             while (secondaryIterator.hasNext()) {
-                Integer secondNumber =  secondaryIterator.next();
+                Integer secondNumber = secondaryIterator.next();
 
                 if (secondNumber == number) {
                     continue;

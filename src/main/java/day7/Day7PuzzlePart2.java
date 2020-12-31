@@ -1,4 +1,4 @@
-package aoc.day7;
+package day7;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -8,11 +8,11 @@ import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Day7PuzzlePart2 {
-    private static Map<String, Set<BagContainer>> bagToContainer = new HashMap<>();
+    private static final Map<String, Set<BagContainer>> bagToContainer = new HashMap<>();
 
     static class BagContainer {
-        private String bagName;
-        private Integer bagCount;
+        private final String bagName;
+        private final Integer bagCount;
 
         public BagContainer(String bagName, Integer bagCount) {
             this.bagName = bagName;

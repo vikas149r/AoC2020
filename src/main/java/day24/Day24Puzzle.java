@@ -1,14 +1,12 @@
-package aoc.day24;
+package day24;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -156,10 +154,10 @@ public class Day24Puzzle {
 
             switch (direction) {
                 case "e":
-                    tile = (x + 2) +"," + y;;
+                    tile = (x + 2) + "," + y;
                     break;
                 case "w":
-                    tile = (x - 2) +"," + y;;
+                    tile = (x - 2) + "," + y;
                     break;
                 case "sw":
                     tile = (x - 1) + "," + (y - 1);

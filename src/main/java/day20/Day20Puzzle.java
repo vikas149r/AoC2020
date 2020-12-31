@@ -1,4 +1,4 @@
-package aoc.day20;
+package day20;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -325,11 +325,7 @@ public class Day20Puzzle {
 
         Pixel secondPixelFlipRotatedThrice = secondPixelFlip.rotatePixel().rotatePixel().rotatePixel();
 
-        if (matches(firstPixel, secondPixelFlipRotatedThrice)) {
-            return true;
-        }
-
-        return false;
+        return matches(firstPixel, secondPixelFlipRotatedThrice);
     }
 
     public static boolean matches(Pixel firstPixel, Pixel secondPixel) {
@@ -345,11 +341,7 @@ public class Day20Puzzle {
             return true;
         }
 
-        if (firstPixel.bottom.equals(secondPixel.top)) {
-            return true;
-        }
-
-        return false;
+        return firstPixel.bottom.equals(secondPixel.top);
     }
 
 

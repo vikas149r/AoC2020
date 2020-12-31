@@ -1,4 +1,4 @@
-package aoc.day20;
+package day20;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -119,7 +119,7 @@ public class Day20PuzzleRound3 {
         /*System.out.println((maxX - minX) + " - " + (maxY - minY));
         System.out.println(nameToCell);*/
 
-        char[][] image = new char[(maxX - minX + 1)*8][(maxY - minY + 1)*8];
+        char[][] image = new char[(maxX - minX + 1) * 8][(maxY - minY + 1) * 8];
 
         nameToCell.values().stream().forEach(cell -> {
             Pixel currentPixel = nameToPixel.get(cell.tileName);
@@ -270,18 +270,18 @@ public class Day20PuzzleRound3 {
         }
 
         if (cell.leftTile != null && !tilesPopulated.contains(cell.leftTile.tileName)) {
-            nameToCell.get(cell.leftTile.tileName).x = cell.x - 1;;
+            nameToCell.get(cell.leftTile.tileName).x = cell.x - 1;
             nameToCell.get(cell.leftTile.tileName).y = cell.y;
         }
 
         if (cell.topTile != null && !tilesPopulated.contains(cell.topTile.tileName)) {
             nameToCell.get(cell.topTile.tileName).x = cell.x;
-            nameToCell.get(cell.topTile.tileName).y = cell.y - 1;;
+            nameToCell.get(cell.topTile.tileName).y = cell.y - 1;
         }
 
         if (cell.bottomTile != null && !tilesPopulated.contains(cell.bottomTile.tileName)) {
             nameToCell.get(cell.bottomTile.tileName).x = cell.x;
-            nameToCell.get(cell.bottomTile.tileName).y = cell.y + 1;;
+            nameToCell.get(cell.bottomTile.tileName).y = cell.y + 1;
         }
 
         if (cell.rightTile != null && !tilesPopulated.contains(cell.rightTile.tileName)) {
@@ -486,8 +486,8 @@ public class Day20PuzzleRound3 {
 
                 int layer = (xLayer < yLayer) ? xLayer : yLayer;
 
-                boolean top = i < noOfLayers ? true : false;
-                boolean left = j < noOfLayers ? true : false;
+                boolean top = i < noOfLayers;
+                boolean left = j < noOfLayers;
 
                 char character = twoDimensionalArray[i][j];
                 if (left) {
@@ -553,8 +553,8 @@ public class Day20PuzzleRound3 {
 
                 int layer = (xLayer < yLayer) ? xLayer : yLayer;
 
-                boolean top = i < layers.size() ? true : false;
-                boolean left = j < layers.size() ? true : false;
+                boolean top = i < layers.size();
+                boolean left = j < layers.size();
 
                 if (left) {
                     if (top) {
@@ -749,8 +749,8 @@ public class Day20PuzzleRound3 {
 
                     int layer = (xLayer < yLayer) ? xLayer : yLayer;
 
-                    boolean top = i < noOfLayers ? true : false;
-                    boolean left = j < noOfLayers ? true : false;
+                    boolean top = i < noOfLayers;
+                    boolean left = j < noOfLayers;
 
                     char character = twoDimensionalArray[i][j];
                     if (left) {
@@ -812,8 +812,8 @@ public class Day20PuzzleRound3 {
 
                     int layer = (xLayer < yLayer) ? xLayer : yLayer;
 
-                    boolean top = i < noOfLayers ? true : false;
-                    boolean left = j < noOfLayers ? true : false;
+                    boolean top = i < noOfLayers;
+                    boolean left = j < noOfLayers;
 
                     if (left) {
                         if (top) {

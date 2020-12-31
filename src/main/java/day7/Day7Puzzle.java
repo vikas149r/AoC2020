@@ -1,4 +1,4 @@
-package aoc.day7;
+package day7;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class Day7Puzzle {
-    private static Map<String, Set<String>> bagToContainer = new HashMap<>();
+    private static final Map<String, Set<String>> bagToContainer = new HashMap<>();
 
     public static void main(String[] args) throws Exception {
         final File inputFile = new File(Class.forName(Thread.currentThread().getStackTrace()[1].getClassName()).getResource("Input.txt").toURI().getPath());

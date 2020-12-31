@@ -1,4 +1,4 @@
-package aoc.day16;
+package day16;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -36,6 +36,7 @@ public class Day16Puzzle {
             return Objects.hash(lowestNumber, highestMid, lowestMid, highest);
         }
     }
+
     public static void main(String[] args) throws Exception {
         final File inputFile = new File(Class.forName(Thread.currentThread().getStackTrace()[1].getClassName()).getResource("Input.txt").toURI().getPath());
         BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(inputFile)));

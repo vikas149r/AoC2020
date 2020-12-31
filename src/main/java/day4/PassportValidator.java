@@ -1,4 +1,4 @@
-package aoc.day4;
+package day4;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -40,9 +40,7 @@ public class PassportValidator {
             for (String keyValuePair : keyValue) {
                 String[] mapping = keyValuePair.split(":");
 
-                if (personFields.contains(mapping[0])) {
-                    personFields.remove(mapping[0]);
-                }
+                personFields.remove(mapping[0]);
             }
         }
 

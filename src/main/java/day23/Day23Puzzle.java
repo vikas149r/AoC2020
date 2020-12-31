@@ -1,4 +1,4 @@
-package aoc.day23;
+package day23;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -34,7 +34,7 @@ public class Day23Puzzle {
 
         for (Character character : input.toCharArray()) {
             Integer number = Character.digit(character, 10);
-            Node<Integer> node = new Node(prevNode != null ? prevNode : null, number, null);
+            Node<Integer> node = new Node(prevNode, number, null);
 
             if (firstNode == null) {
                 firstNode = node;
@@ -50,7 +50,7 @@ public class Day23Puzzle {
 
         int largestNumber = 1000000;
         for (int i = 10; i <= largestNumber; i++) {
-            Node node = new Node(prevNode != null ? prevNode : null, i, null);
+            Node node = new Node(prevNode, i, null);
 
             if (prevNode != null) {
                 prevNode.next = node;

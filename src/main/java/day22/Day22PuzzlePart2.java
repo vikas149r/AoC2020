@@ -1,10 +1,12 @@
-package aoc.day22;
+package day22;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Day22PuzzlePart2 {
     public static void main(String[] args) throws Exception {

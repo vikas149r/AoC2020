@@ -1,6 +1,5 @@
-package aoc.day21;
+package day21;
 
-import javax.sound.sampled.Line;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -32,7 +31,10 @@ public class Day21Puzzle {
 
             for (String allergen : allergens) {
                 allergenToIngredients.merge(allergen.trim(), Stream.of(Arrays.asList(ingredients.split(" "))).collect(Collectors.toList()),
-                        (k, v) -> { k.add(Arrays.asList(ingredients.split(" "))); return k; });
+                        (k, v) -> {
+                            k.add(Arrays.asList(ingredients.split(" ")));
+                            return k;
+                        });
             }
         }
 

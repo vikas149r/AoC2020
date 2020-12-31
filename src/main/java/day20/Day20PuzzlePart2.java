@@ -1,4 +1,4 @@
-package aoc.day20;
+package day20;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -348,8 +348,8 @@ public class Day20PuzzlePart2 {
 
                     int layer = (xLayer < yLayer) ? xLayer : yLayer;
 
-                    boolean top = i < noOfLayers ? true : false;
-                    boolean left = j < noOfLayers ? true : false;
+                    boolean top = i < noOfLayers;
+                    boolean left = j < noOfLayers;
 
                     char character = twoDimensionalArray[i][j];
                     if (left) {

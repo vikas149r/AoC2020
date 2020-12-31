@@ -1,6 +1,4 @@
-package aoc.day4;
-
-import com.rabbitmq.client.ConnectionFactory;
+package day4;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -14,7 +12,7 @@ import java.util.regex.Pattern;
 
 public class PassportExtraParameters {
     public interface Constraints<T> {
-        public boolean validate(T input);
+        boolean validate(T input);
     }
 
     public static class BYRConstraints implements Constraints<String> {

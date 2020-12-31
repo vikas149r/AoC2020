@@ -1,6 +1,4 @@
-package aoc.oauth;
-
-import okhttp3.*;
+package oauth;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 class BasicAuthInterceptor implements Interceptor {
 
-    private String credentials;
+    private final String credentials;
 
     public BasicAuthInterceptor(String user, String password) {
         this.credentials = Credentials.basic(user, password);

@@ -1,4 +1,4 @@
-package aoc.day3;
+package day3;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -28,7 +28,7 @@ public class ModifiedTobogganRider {
                 break;
             }
 
-            columnNumber = columnNumber + columnIncrement ;
+            columnNumber = columnNumber + columnIncrement;
 
             if (columnNumber > line.length()) {
                 columnNumber = columnNumber - line.length();

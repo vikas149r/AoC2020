@@ -1,13 +1,9 @@
-package aoc.day2;
-
-import aoc.day1.RetrieveMultiplication;
+package day2;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 
 public class CheckPatterns {
 
